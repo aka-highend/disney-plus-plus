@@ -26,4 +26,4 @@ Run it using:
 ```
 npm start
 ```
-Then open in the browser by entering this URL http://localhost:3000/
+Then open in the browser by entering this URL http://localhost:3000/. Insert your TMDB API read access token in the `tokenAccess` variable inside `api/API.js` file.
