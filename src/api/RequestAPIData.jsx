@@ -12,12 +12,9 @@ export const RequestAPIData = (props) => {
   useEffect(() => {
     const getData = async () => {
       const res = await fetchData(endPoint);
-      console.log('RES: ', res);
       setData(res?.results);
     };
     getData();
-    // console.log("i'm from "+props.title);
-    // console.log(data);
   
   }, [endPoint]);
 

@@ -20,12 +20,9 @@ const Card = (props) => {
     setPlayVideo(true);
   };
   const closeVideoPlayerHandler=()=>{
-    // console.log("clicked");
     setPlayVideo(false);
   }
   const removeFremWishlistHandler = () => {
-    // console.log(props.data);
-    // removeDataFromDataBase({ collection: userId, id: props.data.refId });
     dispatch(wishlistSliceAction.removeFromWishlist(props.data.id));
   };
   const openHoverHandler=()=>{

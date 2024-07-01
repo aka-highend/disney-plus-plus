@@ -18,7 +18,6 @@ const detailSlice = createSlice({
   initialState,
   reducers: {
     addData(state, action) {
-        // console.log(state);
       state = action.payload;
       return state;
     },

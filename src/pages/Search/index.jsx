@@ -18,16 +18,10 @@ const Search = () => {
   useEffect(() => {
     const featchDataCaller = async () => {
       const res = await fetchData(endPoint);
-      // console.log(res.results);
-      console.log('SEARCH RESULT: ', res);
       setData(res?.results);
     };
     featchDataCaller();
   }, [endPoint]);
-
-  console.log('DATA RESULT: ', data);
-  console.log('DATA LENGTH: ', data?.length);
-  console.log('QUERY: ', query);
 
 
   return (

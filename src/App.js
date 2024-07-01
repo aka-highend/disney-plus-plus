@@ -21,7 +21,6 @@ const App = () => {
         uid: localStorage.getItem("uid"),
         token: localStorage.getItem("token"),
       };
-      // console.log("im from app auth");
       dispatch(authSliceAction.login(data));
     }
   }, [dispatch]);
@@ -29,7 +28,6 @@ const App = () => {
   const userId = useSelector(state => state.auth.uid);
   const [length,setLength]=useState();
   useEffect(() => {
-    // console.log("im from app wishlist");
     const getAllList = async () => {
       const items = [];
       setLength(items.length);

@@ -10,7 +10,6 @@ const Layout = (props) => {
     const silimarActiveHandler=()=>{
         setSimilarActive(true);
         setVideoActive(false);
-        // console.log("clicked");
     };
     const videosActiveHandler=()=>{
         setSimilarActive(false);

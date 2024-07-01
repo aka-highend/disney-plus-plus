@@ -9,13 +9,11 @@ export const RequestVideoIds = (props) => {
   useEffect(() => {
     const getData = async () => {
       const res = await fetchData(endPoint);
-      console.log('RES: ', res);
       setData(res?.results);
     };
     getData();
   }, [endPoint]);
 
-  // console.log(data);
 
   let trailers = data?.sort((a, b) => {
     if (a.official === true) return -1;

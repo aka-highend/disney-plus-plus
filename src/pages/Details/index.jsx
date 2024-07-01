@@ -43,11 +43,6 @@ const Details = (props) => {
   const duration = useSelector((state) => state.details.duration);
   const description = useSelector((state) => state.details.description);
   let data = { id,added, videoKey, type, img, rating, lang, title, releaseDate, duration, description };
-
-  console.log('DESCRIPTION: ', description);
-  console.log('TYPE: ', type);
-  console.log('ID: ', id);
-  console.log('DATA: ', data);
  
   const dataEndPoint = `${data.type}/${data.id}/recommendations`;
 
