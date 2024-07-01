@@ -2,7 +2,7 @@
 
 This disney plus app consists of 5 main pages, a watch list, search, home, movies, and TV shows/series. Built using React.js, Redux, React Player for video player, and also Slick Carousel for slider. The design of the web app is already responsive.
 
-Click [here](https://drive.google.com/drive/folders/1urOHHEVzknXvyDYR3_gB2dqDY2qumDKY?usp=sharing) to see the video demo, and also click [here](https://6682800d7fa05e03d71c808c--silver-kashata-8be11d.netlify.app/) to see the live site.
+Click [here](https://drive.google.com/drive/folders/1urOHHEVzknXvyDYR3_gB2dqDY2qumDKY?usp=sharing) to see the video demo, and also click [here](https://silver-kashata-8be11d.netlify.app/) to see the live site.
 
 
 ### Main Technologies
