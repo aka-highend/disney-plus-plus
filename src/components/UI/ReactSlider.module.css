@@ -1,0 +1,9 @@
+
+.reactSliderItem{
+    width: 8rem;
+    height: 11rem;
+    padding-right: .5rem;
+}
+img{
+    border-radius: .3rem;
+}

@@ -1,0 +1,18 @@
+
+.upcMovies {
+  width: 90%;
+  height: 18rem;
+  margin-left: 8%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+}
+.upcMovies h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}

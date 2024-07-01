@@ -1,0 +1,42 @@
+.layoutContainer{
+    width:90%;
+    margin-left: 8%;
+    height: 3rem;
+    margin-top: 2rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.layoutTitle{
+    width: 100%;
+    display: flex;
+    /* padding: 1rem 0rem; */
+    align-items: center;
+
+}
+.layoutTitle h3{
+    padding-right: 3rem;
+    color: white;
+    opacity: .6;
+    cursor: pointer;
+}
+.underline{
+    height: 2.5px;
+    background: rgba(145, 136, 168, 0.15);
+}
+.active{
+    opacity: 1;
+}
+h3 a{
+    text-decoration: none;
+    color: white;
+}
+@media only screen and (max-width:600px){
+    .layoutTitle h3{
+        font-size: .8rem;
+        padding-right: .3rem;
+        padding-left: 0;
+        margin-left: 0;
+
+    }
+}

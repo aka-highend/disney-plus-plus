@@ -1,0 +1,31 @@
+
+.VideoWrapper{
+  display: flex;
+  width: 20rem;
+  height: 17rem;
+  border-radius: 10px;
+  cursor: pointer;
+  /* border: 3px solid rgba(249,249,249,.1); */
+  /* margin-right: 1.24rem; */
+  margin-bottom: 2rem;
+  padding-right:0.5rem;
+transition: all 250ms;
+}
+.VideoWrapper img:hover{
+  object-fit: cover;
+  height: 100%;
+  border-radius: 15px;
+  transform: scale(1.2);
+  border: 3px solid rgba(0,0,0,.75);
+  box-shadow: rgb(0 0 0 /80%) 0px 40px 58px -16px,rgb(0 0 0 /72%)0px 30px 22px -10px;
+}
+.VideoWrapper img{
+  width: 20rem;
+  height: 13rem;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.trailerPlayer{
+  width: 20rem;
+  height: 13rem;
+}

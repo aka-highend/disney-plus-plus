@@ -1,0 +1,246 @@
+.banner {
+  width: 100%;
+  height: 80vh;
+  /* margin-left: 8%; */
+  z-index: -1;
+  /* opacity: .5; */
+  cursor: default;
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 /80%) 0px 40px 58px -16px,rgb(0 0 0 /72%)0px 30px 22px -10px;
+}
+.banner_effect{
+    position: absolute;
+    margin-top: -100px;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(0, 0, 0, 0.993),
+        rgba(0, 0, 0, 0.842)
+    );
+}
+.banner_effect_left{
+    position: absolute;
+    width: 8%;
+    height: 70%;
+    background: linear-gradient(
+        -90deg,
+        transparent,
+        rgba(0, 0, 0, 0.793),
+        rgba(0, 0, 0, 0.842)
+    );
+
+    /* box-shadow: 1px 0px 130px 0px rgba(0,0,0,0.95); */
+    /* background:  rgba(0,0,0,0.85); */
+}
+.banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 60%;
+  padding-left: 8%;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  /* background: blue; */
+  z-index: 10;
+  opacity: 10;
+  /* display: none; */
+}
+
+.btnContainer {
+  width: 80%;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background: green; */
+}
+.content p {
+  opacity: 0.7;
+  width: 80%;
+  font-size: .7rem;
+  text-align: left;
+  /* padding: 1rem 0rem; */
+  letter-spacing: 1.1px;
+}
+.content h1 {
+  font-weight: bold;
+  font-size: 2.2rem;
+  width: 50%;
+  padding: 1rem 0rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .banner{
+    height: 50vh;
+  }
+  .content p{
+    /* display: none; */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 3rem;
+    font-size: .5rem;
+    overflow: none;
+  }
+  .content h1{
+    font-size: 1.5rem;
+    margin: 0;padding: 0;
+  }
+  .content h4{
+    font-size: .6rem;
+    height: 20px;
+    margin: 0;padding: 0;
+  }
+  .btnContainer{
+    width: 100%;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .content{
+    width: 80%;
+    padding-left: 12%;
+    top: 15%;
+    height: 25%;
+  }
+  .banner_effect{
+    height: 100px;
+  }
+  banner_effect_left{
+    width: 20%;
+    height: 60vh;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .banner{
+    height: 60vh;
+  }
+  .content h1{
+    font-size: 1.8rem;
+    margin: 0;padding: 0;
+  }
+  .content p{
+    /* display: none; */
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 3rem;
+    font-size: .5rem;
+    overflow: none;
+  }
+ 
+ 
+  .btnContainer{
+    width: 80%;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .content{
+    width: 80%;
+    padding-left: 12%;
+    top: 15%;
+    height: 25%;
+  }
+  .banner_effect_left{
+    height: 60vh;
+  }
+ 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .banner{
+    height: 75vh;
+  }
+  .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* object-position: 50%,50%; */
+  }
+  .content p{
+    /* display: none; */
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 3rem;
+    font-size: .65rem;
+    overflow: none;
+  }
+  .content h1{
+    font-size: 2rem;
+    margin: 0;padding: 0;
+  }
+  .content h4{
+    font-size: .7rem;
+    height: 20px;
+    margin: 0;padding: 0;
+  }
+  .btnContainer{
+    width: 80%;
+    /* height: 20px; */
+    margin: 0;
+    padding: 0;
+  }
+  .content{
+    width: 70%;
+    padding-left: 10%;
+    top: 25%;
+    height: 30%;
+  }
+  .banner_effect_left{
+    height: 75vh;
+  }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .banner{
+    height: 75vh;
+  }
+  .content p{
+    font-size: 1rem;
+    width: 100%;
+    height: 3rem;
+  }
+  .content h1{
+    font-size: 1.5rem;
+   
+  }
+  .content h4{
+    font-size: 1rem;
+   
+  }
+  .btnContainer{
+    width: 50%;
+  }
+  .content{
+    padding-left: 8%;
+    top: 10%;
+    height: 40%;
+  }
+  .banner_effect_left{
+    height: 75vh;
+  }
+  
+  
+}

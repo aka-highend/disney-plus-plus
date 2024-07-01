@@ -1,0 +1,11 @@
+import React from 'react'
+import { RequestAPIData } from '../../api/RequestAPIData';
+
+const FantasyShows = () => {
+    const endPoint = "discover/tv?language=id&with_genres=10765&with_origin_country=ID&with_original_language=id";
+  
+  return (
+    <RequestAPIData title='Fantasy Shows' endPoint={endPoint}/>
+  )
+}
+export default FantasyShows;
