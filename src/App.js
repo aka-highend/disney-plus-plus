@@ -27,6 +27,7 @@ const App = () => {
 
   const userId = useSelector(state => state.auth.uid);
   const [length,setLength]=useState();
+
   useEffect(() => {
     const getAllList = async () => {
       const items = [];
@@ -34,6 +35,7 @@ const App = () => {
       
       dispatch(wishlistSliceAction.addAllToWishlist(items));
     };
+    
     userId && getAllList();
   }, [dispatch,userId,length]);
 
@@ -49,7 +51,6 @@ const App = () => {
         <Route path="/:path/:id/details" element={<Details />} exact />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      {/* <Footer /> */}
     </Fragment>
   );
 };
