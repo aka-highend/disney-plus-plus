@@ -19,10 +19,6 @@ const Banner = (props) => {
     setTrailer((state) => !state);
   };
   const addToListHandler = async() => {
-    if(!userId){
-      alert("Please login to access wishlist!!!");
-      return;
-    }
     if(props?.data?.added){
       return alert("Already exist in your Wishlist!!!");
     }
